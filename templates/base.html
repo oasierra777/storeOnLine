@@ -1,0 +1,35 @@
+{% load static %}
+{# Load the tag library #}
+{% load bootstrap4 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock title %}</title>
+    {% if stripe_public_key %}
+      <meta name="stripe_public_key" content="{{ stripe_public_key }}">
+    {% endif %}
+    {% block css %}
+    {% endblock css %}
+  </head>
+  <body>
+    {% include "navbar.html" %}
+    <div class="container">
+      {% include "message.html" %}
+      {% block breadcrumb %}        
+      {% endblock breadcrumb %}
+      <div class="row mt-3">
+        {% block content %}
+        {% endblock content %}
+      </div>
+    </div>
+  </body>
+  <script src="https://kit.fontawesome.com/ed5652a487.js" crossorigin="anonymous"></script>
+  
+  {% block javascript %}
+  {% endblock javascript %}
+</html>
