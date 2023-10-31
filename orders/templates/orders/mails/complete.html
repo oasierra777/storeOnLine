@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Orden Completada</title>
+</head>
+<body>
+	<div class="">
+		<h3>{{ user.username }}Tú pedido ha sido enviado</h3>
+		<p>EL pedido se enviará a la dirección: {{ order.shipping_address}}</p>
+		<p>Puedes visitar la página par ver tus pedidos.</p>
+		<a href="{{ next_url }}" target="_blank">Mis pedidos</a>
+	</div>
+</body>
+</html>
