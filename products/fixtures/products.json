@@ -1,0 +1,62 @@
+[
+{
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "title": "Playera para caballero",
+        "description": "Playera para caballero",
+        "price": "9.99",
+        "slug": "playera-para-caballero",
+        "image": "products/playera_hombre.jpg",
+        "created_at": "2019-12-29T17:41:12.810Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "title": "Playera para dama",
+        "description": "Playera para dama",
+        "price": "14.99",
+        "slug": "playera-para-dama",
+        "image": "products/playera_dama.jpg",
+        "created_at": "2019-12-30T03:09:09.739Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+        "title": "playera nike swoosh",
+        "description": "playera nike swoosh",
+        "price": "59.99",
+        "slug": "playera-nike-swoosh",
+        "image": "products/playera-nike-swoosh.jpg",
+        "created_at": "2019-12-30T03:09:49.857Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+        "title": "playera rosada",
+        "description": "playera rosada",
+        "price": "44.99",
+        "slug": "playera-rosada",
+        "image": "products/playera-rosada.jpg",
+        "created_at": "2019-12-30T03:10:27.158Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+        "title": "playera blanca",
+        "description": "playera blanca",
+        "price": "9.99",
+        "slug": "playera-blanca",
+        "image": "products/playera-blanca.png",
+        "created_at": "2019-12-30T03:11:50.953Z"
+    }
+}
+]

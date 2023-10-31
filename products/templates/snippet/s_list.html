@@ -1,0 +1,9 @@
+<div class="row">
+  {% for object in product_list %}
+  <div class="col-3 mt-5">
+    {% include "snippet/s_product.html" with product=object %}
+  </div>
+  {% empty %}
+    <h3>No hay productos disponible en la tienda</h3>
+  {% endfor %}
+</div>

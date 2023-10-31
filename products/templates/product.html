@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+  <!-- creamos dos columnas la primera es para la imagen y
+      la segunda es la informacion del producto -->
+  <div class="col-3">
+    {% if product.image %}
+    <!-- el atributo url nos da la direccion de la imagen que va relacionado con
+        la condicion de urls general -->
+      <img src="{{ product.image.url}}" alt="Imagen del producto" width="200" height="200">
+    {% endif %}
+  </div>
+  <div class="col">
+    <div class="h1">
+      {{ product.title }}
+    </div>
+    <div class="h5 font-weight-bold">
+      Precio: <span class="text-danger">US${{ product.price }}</span>
+    </div>
+    <div class="">
+      <p>{{ product.description }}</p>
+    </div>
+    <div class="">
+      {% include "carts/snippets/add.html" %}
+    </div>
+  </div>
+{% endblock content %}

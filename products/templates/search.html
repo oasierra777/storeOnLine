@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="col">
+    {% include "snippet/s_search.html" with query=query %}
+    <hr>
+    <p>Resultados para: {{query}} ({{count}})</p>
+    {% include "snippet/s_list.html" %}
+  </div>
+{% endblock content %}
